@@ -94,13 +94,18 @@ p {
 .block-three {
 	background-color: darkgray;
 }
-.block-three strong {
+.block-three h3 {
 	align-self: flex-end;
+	font-size: medium;
+	margin: 0;
 }
 .block-three div {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
+}
+.block-three div em {
+	width: 400px;
 }
 .block-four {
 	display: flex;
