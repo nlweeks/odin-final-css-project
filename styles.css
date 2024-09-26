@@ -14,6 +14,10 @@ ul {
 p {
 	font-size: small;
 }
+img {
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px hsla(0, 0%, 42%, 0.635);
+}
 .block-one {
 	color: white;
 	background-color: lightslategray;
@@ -46,7 +50,8 @@ p {
 	max-width: 300px;
 	gap: 4px;
 }
-.top-blurb button, .call-to-action button {
+.top-blurb button,
+.call-to-action button {
 	max-width: fit-content;
 	color: white;
 	background-color: lightseagreen;
@@ -54,6 +59,7 @@ p {
 	padding: 8px;
 	border-radius: 10px;
 	border: 0;
+	box-shadow: 2px 2px 5px hsla(0, 0%, 42%, 0.635);
 }
 .top-blurb h1,
 .top-blurb p,
@@ -64,7 +70,6 @@ p {
 .top-section img {
 	max-width: 300px;
 	height: auto;
-	border-radius: 10px;
 }
 .block-two,
 .block-three {
@@ -83,13 +88,18 @@ p {
 	gap: 20px;
 }
 .image-cards div {
-	flex-basis: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: center;
+}
+.image-cards div div {
+	max-width: 125px;
 }
 .image-cards img {
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
-	border-radius: 10px;
 }
 .block-three {
 	background-color: darkgray;
@@ -118,10 +128,11 @@ p {
 	align-items: center;
 	flex-basis: 500px;
 	font-size: x-small;
-	background-color: aquamarine;
+	background-color: rgb(137, 235, 203);
 	border-radius: 10px;
 	padding: 20px 20px;
 	gap: 30px;
+	box-shadow: 3px 3px 5px hsla(0, 0%, 42%, 0.635);
 }
 .call-to-action div {
 	display: flex;
@@ -131,4 +142,12 @@ p {
 }
 .call-to-action h3 {
 	margin: 0;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	background-color: lightslategray;
+	color: white;
+	font-size: xx-small;
 }
