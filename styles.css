@@ -9,10 +9,13 @@ ul {
 	padding: 0 15px;
 	margin: 0;
 	display: flex;
-	gap: 10px;
+	gap: 20px;
+}
+p {
+	font-size: small;
 }
 .block-one {
-    color: white;
+	color: white;
 	background-color: lightslategray;
 	display: flex;
 	flex-direction: column;
@@ -32,47 +35,95 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 30px;
 	max-width: 600px;
 	margin: 0 auto;
 }
 .top-blurb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	max-width: 300px;
-	gap: 20px;
+	gap: 4px;
 }
-.top-blurb button {
-    color: white;
-    background-color: lightseagreen;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 5px;
-    border: 0;
+.top-blurb button, .call-to-action button {
+	max-width: fit-content;
+	color: white;
+	background-color: lightseagreen;
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 10px;
+	border: 0;
+}
+.top-blurb h1,
+.top-blurb p,
+.top-blurb button,
+.block-two h2 {
+	margin: 0px;
 }
 .top-section img {
 	max-width: 300px;
 	height: auto;
-    border-radius: 10px;
+	border-radius: 10px;
 }
-.block-two {
-    display: flex;
+.block-two,
+.block-three {
+	display: flex;
 	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 40px;
 }
 .image-cards {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 20px;
+	font-size: x-small;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	gap: 20px;
 }
 .image-cards div {
-    flex-basis: 150px;
+	flex-basis: 150px;
 }
 .image-cards img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.block-three {
+	background-color: darkgray;
+}
+.block-three strong {
+	align-self: flex-end;
+}
+.block-three div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.block-four {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+.call-to-action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 500px;
+	font-size: x-small;
+	background-color: aquamarine;
+	border-radius: 10px;
+	padding: 20px 20px;
+	gap: 30px;
+}
+.call-to-action div {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex-basis: 300px;
+}
+.call-to-action h3 {
+	margin: 0;
 }
