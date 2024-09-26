@@ -51,4 +51,28 @@ ul {
 .top-section img {
 	max-width: 300px;
 	height: auto;
+    border-radius: 10px;
+}
+.block-two {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+.image-cards {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+.image-cards div {
+    flex-basis: 150px;
+}
+.image-cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
